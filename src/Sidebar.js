@@ -6,27 +6,24 @@ import {
   FiTrendingDown,
   FiSettings,
 } from "react-icons/fi";
-function Sidebar() {
+const Sidebar = ({ className }) => {
   return (
-    <div className="bg-gray-200 w-64 flex-shrink-0 h-screen p-4">
-      <aside className="bg-gray-100 w-64 p-4 flex flex-col justify-between h-screen">
+    // <div className="bg-blue-700 w-72 flex-shrink-0 h-screen p-4">
+      <aside
+        className={`p-4 flex flex-col justify-between rounded-lg ${className}`}
+      >
         <nav className="flex-1">
           <ul className="list-none p-0">
             <li className="mb-2">
-              <Link
-                to="/dashboard/default"
-                className="block py-2 px-3 rounded hover:bg-blue-200"
-              >
-                Dashboard
-              </Link>
+              <span className="text-xl font-bold">DASHBOARD</span>
 
               <ul className="list-none p-0 ml-2">
                 <li className="rounded-md bg-blue-50 text-gray-700 font-semibold">
                   <Link
-                    to="/dashboard/default"
+                    to="/"
                     className="block py-2 px-4  hover:text-blue-500 font-semibold flex items-center"
                   >
-                    <FiClock className="h-5 w-5 mr-2" /> Default
+                    <FiClock className="h-5 w-5 mr-2" /> Dashboard
                   </Link>
                 </li>
               </ul>
@@ -35,7 +32,7 @@ function Sidebar() {
             <li className="mb-2">
               <a
                 href="#"
-                className="block py-2 pl-0 text-gray-500 font-semibold text-sm"
+                className="block py-2 pl-0 text-white font-semibold text-sm"
               >
                 Form Management
               </a>
@@ -44,7 +41,7 @@ function Sidebar() {
             <li className="mb-2">
               <Link
                 to="/customers"
-                className="text-gray-600 block py-2 px-3 rounded hover:text-blue-400 flex items-center font-semibold"
+                className="text-white block py-2 px-3 rounded hover:text-blue-400 flex items-center font-semibold"
               >
                 <FiUsers className="h-5 w-5 mr-2" /> Customers
               </Link>
@@ -53,7 +50,7 @@ function Sidebar() {
             <li className="mb-2">
               <Link
                 to="/income"
-                className="text-gray-600 block py-2 px-4  hover:text-blue-500 font-semibold flex items-center"
+                className="text-white block py-2 px-4  hover:text-blue-500 font-semibold flex items-center"
               >
                 <FiTrendingUp className="h-5 w-5 mr-2" /> Income
               </Link>
@@ -62,7 +59,7 @@ function Sidebar() {
             <li className="mb-2">
               <Link
                 to="/expenses"
-                className="text-gray-600 block py-2 px-4  hover:text-blue-500 font-semibold flex items-center"
+                className="text-white block py-2 px-4  hover:text-blue-500 font-semibold flex items-center"
               >
                 <FiTrendingDown className="h-5 w-5 mr-2" /> Expenses
               </Link>
@@ -71,7 +68,7 @@ function Sidebar() {
             <li className="mb-2">
               <a
                 href="#"
-                className="block py-2 pl-0 text-gray-500 font-semibold text-sm"
+                className="block py-2 pl-0 text-white font-semibold text-sm"
               >
                 Reports
               </a>
@@ -79,8 +76,8 @@ function Sidebar() {
 
             <li className="mb-2">
               <Link
-                to="/dashboard/salesExpenses"
-                className="text-gray-600 block py-2 px-4  hover:text-blue-500 font-semibold flex items-center"
+                to="/dashboard/upload-excel"
+                className="text-white block py-2 px-4  hover:text-blue-500 font-semibold flex items-center"
               >
                 <FiSettings className="h-5 w-5 mr-2" /> Sales Expenses
               </Link>
@@ -89,7 +86,7 @@ function Sidebar() {
             <li className="mb-2">
               <a
                 href="#"
-                className="block py-2 pl-0 text-gray-500 font-semibold text-sm"
+                className="block py-2 pl-0 text-white font-semibold text-sm"
               >
                 Uploads
               </a>
@@ -97,8 +94,8 @@ function Sidebar() {
 
             <li className="mb-2">
               <Link
-                to="/dashboard/uploadExpenses"
-                className="text-gray-600 block py-2 px-4  hover:text-blue-500 font-semibold flex items-center"
+                to="/upload-expenses"
+                className="text-white block py-2 px-4  hover:text-blue-500 font-semibold flex items-center"
               >
                 <FiSettings className="h-5 w-5 mr-2" /> Upload Expenses
               </Link>
@@ -106,8 +103,8 @@ function Sidebar() {
 
             <li className="mb-2">
               <Link
-                to="/dashboard/uploadIncome"
-                className="text-gray-600 block py-2 px-4  hover:text-blue-500 font-semibold flex items-center"
+                to="/upload-excel"
+                className="text-white block py-2 px-4  hover:text-blue-500 font-semibold flex items-center"
               >
                 <FiSettings className="h-5 w-5 mr-2" /> Upload Income
               </Link>
@@ -115,7 +112,7 @@ function Sidebar() {
           </ul>
         </nav>
       </aside>
-    </div>
+    // </div>
   );
-}
+};
 export default Sidebar;

@@ -1,12 +1,15 @@
 import Header from "./Header";
 import Sidebar from "./Sidebar";
-function Layout({ children }) {
+import { Outlet } from "react-router-dom";
+function Layout() {
   return (
-    <div className="flex h-screen bg-gray-100 flex flex-col">
+    <div className="flex h-screen bg-blue-700 flex flex-col pl-20">
       <Header />
       <div className="flex flex-1 overflow-hidden">
-        <Sidebar />
-        <div className="flex-1 overflow-y-auto p-4">{children}</div>
+        <Sidebar className="w-62 flex-shrink-0 bg-gray-800 p-6 shadow-xl text-white" />
+        <div className="flex-1 overflow-y-auto">
+          <Outlet />
+        </div>
       </div>
     </div>
   );
