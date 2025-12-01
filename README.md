@@ -31,6 +31,8 @@ Follow these steps to get a local copy of the project up and running:
       npm start (was built using pure react)
 
       The application will now be running at 'http://localhost:3000'
+  
+      Login if you have an account or create an account to begin
 
       ## Key Features
       * **Income Management:** Record and paginate sales records (e.g., sales per kg).
