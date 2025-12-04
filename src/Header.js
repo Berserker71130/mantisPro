@@ -17,7 +17,7 @@ const Header = () => {
         <div className="flex items-center">
           <div className="flex items-center mr-4">
             <GiPlantSeed className="text-green-500 mr-2" size={24} />
-            <h2 className="text-xl font-semibold mr-4">Mantis</h2>
+            <h2 className="text-xl font-semibold mr-4">Farm Inventory</h2>
           </div>
 
           <div className="relative">
