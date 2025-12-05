@@ -16,10 +16,11 @@ Follow these steps to get a local copy of the project up and running:
 ### Prerequisites
 1. Node.js (LTS version recommended)
 2. npm (or yarn)
+3. Swagger API for making calls, POSTS, GET, PATCH and DELETE
 
    ### Installation
    1. Clone the repository
-      git clone [Your-gitHub-Repository-URL]
+      git clone https://github.com/Berserker71130/mantisPro.git
 
    2. Navigate to the project directory:
          cd mypro
@@ -32,7 +33,26 @@ Follow these steps to get a local copy of the project up and running:
 
       The application will now be running at 'http://localhost:3000'
   
-      Login if you have an account or create an account to begin
+      # Using The Application
+      1. After starting the app using npm start, the landing page is the login form of which you must enter in your account details to gain access into the app, if you don't have an account, there is a link at the top of the login page which when clicked will lead you to the signup page, there you will cretae an account in order to be able to gain access into the application.
+     
+      2. ##To obtain access_token, Make a HTTP POST Request to http://172.93.51.119:9090/api/v1/auth/login
+         {
+  "username": "angelgee",
+  "password": "1234567890"
+}
+**The HTTP POST Response will be**
+	
+Response body
+{
+  "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBbmdlbEdlZSIsIm9yZ2FuaXphdGlvbklkIjoxLCJpYXQiOjE3NjQ5MjMyNzksImV4cCI6MTc2NTc4NzI3OX0.VHFWqEIBMqINmPKZGTw9JT-BdddebfsDEpeg1rNtdyA",
+  "username": "AngelGee",
+  "organizationId": 1,
+  "roles": [
+    "ROLE_ADMIN"
+  ]
+}
+      
 
       ## Key Features
       * **Income Management:** Record and paginate sales records (e.g., sales per kg).
