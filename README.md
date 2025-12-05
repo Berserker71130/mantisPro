@@ -36,14 +36,19 @@ Follow these steps to get a local copy of the project up and running:
       # Using The Application
       1. After starting the app using npm start, the landing page is the login form of which you must enter in your account details to gain access into the app, if you don't have an account, there is a link at the top of the login page which when clicked will lead you to the signup page, there you will cretae an account in order to be able to gain access into the application.
      
-      2. ##To obtain access_token, Make a HTTP POST Request to http://172.93.51.119:9090/api/v1/auth/login
+      2. ##To obtain access_token,
+        
+          Make a HTTP POST Request to http://172.93.51.119:9090/api/v1/auth/login
+         
          {
   "username": "angelgee",
   "password": "1234567890"
 }
+
 **The HTTP POST Response will be**
 	
 Response body
+
 {
   "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBbmdlbEdlZSIsIm9yZ2FuaXphdGlvbklkIjoxLCJpYXQiOjE3NjQ5MjMyNzksImV4cCI6MTc2NTc4NzI3OX0.VHFWqEIBMqINmPKZGTw9JT-BdddebfsDEpeg1rNtdyA",
   "username": "AngelGee",
@@ -52,7 +57,32 @@ Response body
     "ROLE_ADMIN"
   ]
 }
-      
+
+	  #####The accessToken from the HTTP post response in the payload will be used to access transactions such as sales, expense, add customer and search customer in the app
+
+## To POST a customer
+
+make a HTTP POST request to http://172.93.51.119:9090/api/v1/income
+
+{
+  "customerId": 10,
+  "noOfKg": 23,
+  "grade": "2",
+  "pricePerKg": 34,
+  "category": "SALES"
+}
+
+**The HTTP response will be**
+{
+  "id": 10,
+  "createdAt": "2025-12-05T09:02:44.5185",
+  "customerName": "Hajarah Abdullahi",
+  "kg": 23,
+  "pricePerKg": 34,
+  "grade": "2",
+  "category": "SALES",
+  "amount": 782
+}
 
       ## Key Features
       * **Income Management:** Record and paginate sales records (e.g., sales per kg).
