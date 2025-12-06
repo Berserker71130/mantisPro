@@ -139,4 +139,41 @@ Send a HTTP POST request to http://172.93.51.119:9090/api/v1/expenditures
       * **Expense tracking:** Log operational costs.
       * **Customer CRM:** Search and manage customer contact details.
       * **Modern UI:** Responsive, clean interface utilizing the Tailwind pagination design.
+
+## Screenshots
+
+<img width="1366" height="768" alt="Login" src="https://github.com/user-attachments/assets/0eff63a7-739d-4094-a40a-8a58ab07dba7" />
+Login page where you enter password and user name if you have an account
+
+<img width="1366" height="768" alt="Signup page 1" src="https://github.com/user-attachments/assets/f6344f96-851a-4b49-807f-da2f08149303" />
+
+<img width="1366" height="768" alt="Signup page 2" src="https://github.com/user-attachments/assets/2e9c0f7d-4900-4f81-8eab-adce3ed67fe4" />
+
+Two screenshots above are th signup form, incase you don't have an account and you need to create one in order to be able to access the app
+
+<img width="1366" height="768" alt="Dashboard" src="https://github.com/user-attachments/assets/bd0ff938-b3ce-4306-86fe-47d163df547f" />
+Dashboard(Landing page)
+
+<img width="1366" height="768" alt="Customer page" src="https://github.com/user-attachments/assets/14f03170-2b53-4161-b7b1-c174e6db6a35" />
+Customer management page
+
+<img width="1366" height="768" alt="Customer management page 2" src="https://github.com/user-attachments/assets/6adc1316-621a-439d-b872-02ea843a7a6c" />
+Customer page 2
+
+<img width="1366" height="768" alt="Income" src="https://github.com/user-attachments/assets/9a5009f4-3352-4524-a09f-a5164f914e60" />
+Sales/Income page
+
+<img width="1366" height="768" alt="Expense page" src="https://github.com/user-attachments/assets/5a6b3ac2-7f6b-42d5-b35b-7d571e759884" />
+Expense page
+
+<img width="1366" height="768" alt="Expense upload" src="https://github.com/user-attachments/assets/31231d5e-c8ae-4815-a068-6fa2f048418a" />
+Expense file upload
+
+<img width="1366" height="768" alt="Income upload" src="https://github.com/user-attachments/assets/6dfdcf7d-a03d-4932-a64e-63f71e100a65" />
+Income file upload
+
+
+
+
+
    
