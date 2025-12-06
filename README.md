@@ -53,6 +53,7 @@ Follow these steps to get a local copy of the project up and running:
 	
 Response body
 
+```json
 {
   "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBbmdlbEdlZSIsIm9yZ2FuaXphdGlvbklkIjoxLCJpYXQiOjE3NjQ5MjMyNzksImV4cCI6MTc2NTc4NzI3OX0.VHFWqEIBMqINmPKZGTw9JT-BdddebfsDEpeg1rNtdyA",
   "username": "AngelGee",
@@ -61,6 +62,7 @@ Response body
     "ROLE_ADMIN"
   ]
 }
+```
 
 	  #####The accessToken from the HTTP post response in the payload will be used to access transactions such as sales, expense, add customer and search customer in the app
 
