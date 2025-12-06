@@ -70,6 +70,7 @@ Response body
 
 make a HTTP POST request to http://172.93.51.119:9090/api/v1/income
 
+```json
 {
   "customerId": 10,
   "noOfKg": 23,
@@ -77,9 +78,11 @@ make a HTTP POST request to http://172.93.51.119:9090/api/v1/income
   "pricePerKg": 34,
   "category": "SALES"
 }
+```
 
 **The HTTP response will be**
 
+```json
 {
   "id": 10,
   "createdAt": "2025-12-05T09:02:44.5185",
@@ -90,20 +93,24 @@ make a HTTP POST request to http://172.93.51.119:9090/api/v1/income
   "category": "SALES",
   "amount": 782
 }
+```
 
 ## To Post A Customer
 
 Make a HTTP POST request to http://172.93.51.119:9090/api/v1/customers
 
+```json
 {
   "name": "Hannah G Anthony",
   "email": "hanny@gmail.com",
   "customerType": "INDIVIDUAL",
   "phoneNumber": "08120465769"
 }
+```
 
 **The HTTP response will be**
 
+```json
 {
   "id": 17,
   "name": "Hannah G Anthony",
@@ -111,11 +118,13 @@ Make a HTTP POST request to http://172.93.51.119:9090/api/v1/customers
   "customerType": "INDIVIDUAL",
   "phoneNumber": "08120465769"
 }
+```
 
 ## To Post an Expenditure
 
 Send a HTTP POST request to http://172.93.51.119:9090/api/v1/expenditures
 
+```json
 {
   "amount": 12,
   "supplierId": 1,
@@ -125,9 +134,11 @@ Send a HTTP POST request to http://172.93.51.119:9090/api/v1/expenditures
   "unitPrice": 4,
   "description": "UTILITIES"
 }
+```
 
 **The HTTP response will be**
 
+```json
 {
   "id": 4,
   "quantity": 23,
@@ -138,6 +149,7 @@ Send a HTTP POST request to http://172.93.51.119:9090/api/v1/expenditures
   "supplierName": "Manasseh Elias Anche",
   "category": "UTILITIES"
 }
+```
 
 ## Key Features
 
